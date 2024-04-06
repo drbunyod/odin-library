@@ -67,6 +67,7 @@ document.querySelector("form").addEventListener("submit", e => {
         alert("Number of pages must be entered.");
     } else {
         addBookToLibrary(newBookTitle.value, newBookAuthor.value, newBookPages.value, newBookRead.checked);
+        e.target.reset();
         displayLibrary();
     }
 });
