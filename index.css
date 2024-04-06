@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+.container > div {
+    padding: 10px 15px;
+}
+
+.sidebar-title {
+    border-bottom: 1px solid #000000;
+    border-right: 1px solid #000000;
+}
+
+.sidebar {
+    grid-row: 2 / 3;
+    border-right: 1px solid #000000;
+}
+
+form {
+    display: grid;
+    gap: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button {
+    width: 75px;
+    height: 20px;
+}
+
+.main-title {
+    border-bottom: 1px solid #000000;
+}
+
+table, th, td {
+    padding: 1px 10px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+.table-status, .table-delete {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.table-delete button {
+    color: #950000;
+}
+
+.not-found {
+    text-align: center;
+}
